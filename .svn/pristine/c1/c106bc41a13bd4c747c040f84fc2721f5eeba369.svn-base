@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo chown master:www-data storage -R
+sudo chmod 770 storage -R
+composer dump-autoload
+php artisan view:clear

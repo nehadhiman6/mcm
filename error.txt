@@ -1,0 +1,144 @@
+
+> @ dev D:\projects\mcm
+> cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js
+
+ ERROR  Failed to compile with 4 errors17:01:14
+
+ error  in ./resources/assets/sass/app.scss
+
+Module build failed: Error: Missing binding D:\projects\mcm\node_modules\node-sass\vendor\win32-ia32-57\binding.node
+Node Sass could not find a binding for your current environment: Windows 32-bit with Node.js 8.x
+
+Found bindings for the following environments:
+  - Windows 64-bit with Node.js 11.x
+
+This usually happens because your environment has changed since running `npm install`.
+Run `npm rebuild node-sass` to download the binding for your current environment.
+    at module.exports (D:\projects\mcm\node_modules\node-sass\lib\binding.js:15:13)
+    at Object.<anonymous> (D:\projects\mcm\node_modules\node-sass\lib\index.js:14:35)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (D:\projects\mcm\node_modules\sass-loader\lib\loader.js:3:14)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at loadLoader (D:\projects\mcm\node_modules\loader-runner\lib\loadLoader.js:18:17)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:169:2)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:165:10)
+    at D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:176:18
+    at loadLoader (D:\projects\mcm\node_modules\loader-runner\lib\loadLoader.js:47:3)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:169:2)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:165:10)
+    at D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:176:18
+    at loadLoader (D:\projects\mcm\node_modules\loader-runner\lib\loadLoader.js:47:3)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:169:2)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:165:10)
+    at D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:176:18
+    at loadLoader (D:\projects\mcm\node_modules\loader-runner\lib\loadLoader.js:47:3)
+
+ @ ./resources/assets/sass/app.scss 4:14-233
+ @ multi ./resources/assets/js/app.js ./resources/assets/sass/app.scss
+
+ error  in ./resources/assets/js/bootstrap.js
+
+Module build failed: D:/projects/mcm/resources/assets/js/bootstrap.js: Duplicate declaration "token"
+
+  48 | }
+  49 | 
+> 50 | let token = document.head.querySelector('meta[name="csrf-token"]');
+     |     ^
+  51 | 
+  52 | if (token) {
+  53 |     window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+
+
+ @ ./resources/assets/js/app.js 8:0-22
+ @ multi ./resources/assets/js/app.js ./resources/assets/sass/app.scss
+
+ error  in ./resources/assets/sass/app.scss
+
+Module build failed: ModuleBuildError: Module build failed: Error: Missing binding D:\projects\mcm\node_modules\node-sass\vendor\win32-ia32-57\binding.node
+Node Sass could not find a binding for your current environment: Windows 32-bit with Node.js 8.x
+
+Found bindings for the following environments:
+  - Windows 64-bit with Node.js 11.x
+
+This usually happens because your environment has changed since running `npm install`.
+Run `npm rebuild node-sass` to download the binding for your current environment.
+    at module.exports (D:\projects\mcm\node_modules\node-sass\lib\binding.js:15:13)
+    at Object.<anonymous> (D:\projects\mcm\node_modules\node-sass\lib\index.js:14:35)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (D:\projects\mcm\node_modules\sass-loader\lib\loader.js:3:14)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at loadLoader (D:\projects\mcm\node_modules\loader-runner\lib\loadLoader.js:18:17)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:169:2)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:165:10)
+    at D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:176:18
+    at loadLoader (D:\projects\mcm\node_modules\loader-runner\lib\loadLoader.js:47:3)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:169:2)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:165:10)
+    at D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:176:18
+    at loadLoader (D:\projects\mcm\node_modules\loader-runner\lib\loadLoader.js:47:3)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:169:2)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:165:10)
+    at D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:176:18
+    at loadLoader (D:\projects\mcm\node_modules\loader-runner\lib\loadLoader.js:47:3)
+    at runLoaders (D:\projects\mcm\node_modules\webpack\lib\NormalModule.js:192:19)
+    at D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+    at D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:172:11
+    at loadLoader (D:\projects\mcm\node_modules\loader-runner\lib\loadLoader.js:32:11)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:169:2)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:165:10)
+    at D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:176:18
+    at loadLoader (D:\projects\mcm\node_modules\loader-runner\lib\loadLoader.js:47:3)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:169:2)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:165:10)
+    at D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:176:18
+    at loadLoader (D:\projects\mcm\node_modules\loader-runner\lib\loadLoader.js:47:3)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:169:2)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:165:10)
+    at D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:176:18
+    at loadLoader (D:\projects\mcm\node_modules\loader-runner\lib\loadLoader.js:47:3)
+    at iteratePitchingLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:169:2)
+    at runLoaders (D:\projects\mcm\node_modules\loader-runner\lib\LoaderRunner.js:365:2)
+    at NormalModule.doBuild (D:\projects\mcm\node_modules\webpack\lib\NormalModule.js:179:3)
+    at NormalModule.build (D:\projects\mcm\node_modules\webpack\lib\NormalModule.js:268:15)
+    at Compilation.buildModule (D:\projects\mcm\node_modules\webpack\lib\Compilation.js:146:10)
+    at moduleFactory.create (D:\projects\mcm\node_modules\webpack\lib\Compilation.js:433:9)
+    at factory (D:\projects\mcm\node_modules\webpack\lib\NormalModuleFactory.js:253:5)
+    at applyPluginsAsyncWaterfall (D:\projects\mcm\node_modules\webpack\lib\NormalModuleFactory.js:99:14)
+    at D:\projects\mcm\node_modules\tapable\lib\Tapable.js:268:11
+    at NormalModuleFactory.params.normalModuleFactory.plugin (D:\projects\mcm\node_modules\webpack\lib\CompatibilityPlugin.js:52:5)
+    at NormalModuleFactory.applyPluginsAsyncWaterfall (D:\projects\mcm\node_modules\tapable\lib\Tapable.js:272:13)
+    at resolver (D:\projects\mcm\node_modules\webpack\lib\NormalModuleFactory.js:74:11)
+    at process.nextTick (D:\projects\mcm\node_modules\webpack\lib\NormalModuleFactory.js:205:8)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+
+ error  
+
+D:\projects\mcm\node_modules\extract-text-webpack-plugin\loader.js??ref--8-0!D:\projects\mcm\node_modules\style-loader\index.js!D:\projects\mcm\node_modules\css-loader\index.js!D:\projects\mcm\node_modules\postcss-loader\index.js!D:\projects\mcm\node_modules\resolve-url-loader\index.js!D:\projects\mcm\node_modules\sass-loader\lib\loader.js??ref--8-5!D:\projects\mcm\resources\assets\sass\app.scss doesn't export content
+
+                          Asset      Size  Chunks                    Chunk Names
+/js/app.9c782c6423789f58caf3.js    442 kB       0  [emitted]  [big]  /js/app
+              mix-manifest.json  53 bytes          [emitted]         

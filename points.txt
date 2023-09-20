@@ -1,0 +1,17 @@
+*compulsion in admission form
+  mobile and Email of father and mother
+  city 
+*Female /Transgender
+*Have you studied Punjabi in 10th or 12th (as per rule)
+  if student check mark it subject punjabi alloted to him
+*In case of student select else then listed university(given by MCM) 
+ Migration is Complusory on the same screen of "last exam attended"(remove above button) with note You have to submit Orignal copy of Migration
+  wthin a month of admission at office only/-
+
+Upload document
+Aadhar student/Father/Mother compulsion and seprate
+
+
+upload DMC for Semaster wise
+DMC Part1
+DMC part2
